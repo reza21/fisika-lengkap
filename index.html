@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fisika</title>
+	<link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="assets/css/jqm-demos.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+	<script src="assets/js/jquery.js"></script>
+	<!-- <script src="assets/js/index.js"></script> -->
+	<script src="assets/js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="phonegap.js"></script> 
+	<script type="text/javascript" charset="utf-8">
+	  	function onLoad(){
+	        document.addEventListener("deviceready", onDeviceReady, true);
+	    }
+
+	    function exitFromApp(){
+	    	if (confirm("Apakah Yakin Ingin Keluar?")) {
+			    navigator.app.exitApp();
+			}
+	    }
+	</script>
+</head>
+<body>
+<div data-role="page" data-quicklinks="true" id="utama">
+	<div data-role="header" data-position="fixed">
+        <!-- <h1>Fixed header</h1> -->
+		<!-- <h4><img src="logo.jpg" alt="jQuery Mobile" width="70%" height="70%"></h4> -->
+        <h5>Fisika Lengkap</h5>
+        <a href="#nav-panel" data-icon="bars" data-iconpos="notext" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+        <!-- <a href="#search-form" data-icon="gear" data-iconpos="notext" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Cari</a> -->
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content jqm-content">
+	    <div data-demo-html="true">
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a"><a href="tentang_fisika.html" class="ui-btn ui-icon-star ui-btn-icon-top">Tentang <br/> Fisika</a></div>
+				<div class="ui-block-b"><a href="#" class="ui-btn ui-icon-bullets ui-btn-icon-top" >Rumus <br/>Fisika</a></div>
+			</fieldset>
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a"><a href="#" class="ui-btn ui-icon-bars ui-btn-icon-top">Soal &amp; <br/> Jawaban <br/></a></div>
+				<div class="ui-block-b"><a href="#" class="ui-btn ui-icon-grid ui-btn-icon-top">Kalkulator <br/> Fisika</a></div>
+			</fieldset>
+		</div><!--/demo-html -->	
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+    	<h4>Nemuide</h4>
+    </div><!-- /footer -->
+
+    <div data-role="panel" data-position-fixed="true" data-display="overlay" data-theme="a" id="nav-panel">
+
+		<ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+            <li data-icon="home"><a href="#utama">Menu Utama</a></li>
+            <li data-icon="mail"><a href="#request">Request Rumus <br/>&amp; Kalkulator</a></li>
+            <li data-icon="user"><a href="#about">About</a></li>
+            <li data-icon="power"><a href="#" onclick="exitFromApp()">Keluar</a></li>  
+		</ul>
+
+	</div><!-- /panel -->
+
+	<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="a" id="search-form">
+		<div class="jqm-search">
+        <ul class="jqm-list" data-filter-placeholder="Search demos..." data-filter-reveal="true">
+			<li data-filtertext="demos homepage" data-icon="home"><a href=".././">Home</a></li>
+		</ul>
+		</div>
+	</div><!-- /panel -->
+</div>
+
+
+<div data-role="page" id="request">
+    <div data-role="header" data-position="fixed" >
+        <h1>Request Rumus &amp; Kalkulator</h1>
+        <a href="#utama" data-iconpos="notext" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-back ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content jqm-content">
+        <p>Silakan request rumus dan kalkultor</p>
+        <a href="#utama" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-mini ui-icon-back ui-btn-icon-left">Back</a>
+    </div><!-- /content -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="about">
+    <div data-role="header">
+        <h1>About</h1>
+        <a href="#utama" data-iconpos="notext" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-back ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content jqm-content">
+        <p>Tentang aplikasi dan developer</p>
+        <a href="#utama" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-mini ui-icon-back ui-btn-icon-left">Back</a>
+    </div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+.ui-icon-nemuide:after {
+    background-image: url("../../images/logo2.png");
+    /* Make your icon fit */
+    background-size: 18px 18px;
+}
