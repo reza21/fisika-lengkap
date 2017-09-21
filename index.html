@@ -26,8 +26,8 @@
 	</script>
 </head>
 <body>
-<div data-role="page" data-quicklinks="true" id="utama">
-	<div data-role="header" data-position="fixed">
+<div data-role="page" data-quicklinks="true" id="utama" class="app">
+	<div data-role="header" data-position="fixed" class="app-header">
         <!-- <h1>Fixed header</h1> -->
 		<!-- <h4><img src="logo.jpg" alt="jQuery Mobile" width="70%" height="70%"></h4> -->
         <h5>Fisika Lengkap</h5>
@@ -36,21 +36,18 @@
     </div><!-- /header -->
 
     <div role="main" class="ui-content jqm-content">
+    	<!-- <p><img src="images/image-menu.png" width="100%" height="100%"></p> -->
 	    <div data-demo-html="true">
 			<fieldset class="ui-grid-a">
-				<div class="ui-block-a"><a href="tentang_fisika.html" class="ui-btn ui-icon-star ui-btn-icon-top">Tentang <br/> Fisika</a></div>
-				<div class="ui-block-b"><a href="#" class="ui-btn ui-icon-bullets ui-btn-icon-top" >Rumus <br/>Fisika</a></div>
+				<div class="ui-block-a"><a href="pages/tentang_fisika.html" class="ui-btn" data-ajax="false"><img src="images/tentang_fisika.png" width="75%" height="75%" ><br/> Tentang <br/> Fisika</a></div>
+				<div class="ui-block-b"><a href="pages/rumus_fisika.html" class="ui-btn" data-ajax="false"><img src="images/rumus_fisika.png" width="75%" height="75%" ><br/> Rumus <br/>Fisika</a></div>
 			</fieldset>
 			<fieldset class="ui-grid-a">
-				<div class="ui-block-a"><a href="#" class="ui-btn ui-icon-bars ui-btn-icon-top">Soal &amp; <br/> Jawaban <br/></a></div>
-				<div class="ui-block-b"><a href="#" class="ui-btn ui-icon-grid ui-btn-icon-top">Kalkulator <br/> Fisika</a></div>
+				<div class="ui-block-a"><a href="#" class="ui-btn" data-ajax="false"><img src="images/soal_jawaban.png" width="75%" height="75%" ><br/> Soal &amp; <br/> Jawaban <br/></a></div>
+				<div class="ui-block-b"><a href="#" class="ui-btn" data-ajax="false"><img src="images/kalkulator.png" width="75%" height="75%" ><br/>Kalkulator <br/> Fisika</a></div>
 			</fieldset>
 		</div><!--/demo-html -->	
     </div>
-
-    <div data-role="footer" data-position="fixed">
-    	<h4>Nemuide</h4>
-    </div><!-- /footer -->
 
     <div data-role="panel" data-position-fixed="true" data-display="overlay" data-theme="a" id="nav-panel">
 
