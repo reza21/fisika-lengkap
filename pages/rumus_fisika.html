@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fisika</title>
+	<link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="../assets/css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="../assets/css/jqm-demos.css">
+	<link rel="stylesheet" href="../assets/css/app.css">
+	<script src="../assets/js/jquery.js"></script>
+	<!-- <script src="assets/js/index.js"></script> -->
+	<script src="../assets/js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="phonegap.js"></script> 
+	<script type="text/javascript" charset="utf-8">
+	  	function onLoad(){
+	        document.addEventListener("deviceready", onDeviceReady, true);
+	    }
+
+	    function exitFromApp(){
+	    	if (confirm("Apakah Yakin Ingin Keluar?")) {
+			    navigator.app.exitApp();
+			}
+	    }
+	</script>
+</head>
+<body>
+<div data-role="page" data-quicklinks="true" id="utama" class="app">
+	<div data-role="header" data-position="fixed" class="app-header">
+        <!-- <h1>Fixed header</h1> -->
+		<!-- <h4><img src="logo.jpg" alt="jQuery Mobile" width="70%" height="70%"></h4> -->
+        <h5>Fisika Lengkap</h5>
+        <a href="#nav-panel" data-icon="bars" data-iconpos="notext" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+        <!-- <a href="#search-form" data-icon="gear" data-iconpos="notext" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Cari</a> -->
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content jqm-content">
+        <p align="center"><b>Rumus-Rumus Fisika</b></p>
+        <div data-role="collapsible" data-inset="false">
+            <h3>Alat Optik</h3>
+        	<p>sasasas</p>
+            <ul data-role="listview">
+                <li><a href="#">Lup</a></li>
+                <li><a href="#">Mikoskop</a></li>
+                <li><a href="#">Teropong Bintang</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Atom, Ion, Molekul</h3>
+            <ul data-role="listview">
+                <li><a href="#">Atom</a></li>
+                <li><a href="#">Ion</a></li>
+                <li><a href="#">Molekul</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Cahaya</h3>
+            <ul data-role="listview">
+                <li><a href="#">Pemantulan Cahaya</a></li>
+                <li><a href="#">Pembiasan Cahaya</a></li>
+                <li><a href="#">Perbesaran Bayangan <br/>oleh Cermin</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Dinamika Rotasi</h3>
+            <ul data-role="listview">
+                <li><a href="#">Torsi</a></li>
+                <li><a href="#">Momen Inersia</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Dualisme Gel Artikel</h3>
+            <ul data-role="listview">
+                <li><a href="#">kosong</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Energi</h3>
+            <ul data-role="listview">
+                <li><a href="#">Energi Mekanik</a></li>
+                <li><a href="#">Energi Potensial</a></li>
+                <li><a href="#">Energi Kinetik</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Fisika Atom</h3>
+            <ul data-role="listview">
+                <li><a href="#">kosong</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Gaya &amp; Tekanan</h3>
+            <ul data-role="listview">
+                <li><a href="#">Gaya - Hukum Newton</a></li>
+                <li><a href="#">Gaya Gesek</a></li>
+                <li><a href="#">Gaya Berat</a></li>
+                <li><a href="#">Tekanan Hidrostatis</a></li>
+                <li><a href="#">Hukum Pascal</a></li>
+                <li><a href="#">Hukum Boyle</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Gelombang Elektromagnetik</h3>
+            <ul data-role="listview">
+                <li><a href="#">Kosong</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Gerak</h3>
+            <ul data-role="listview">
+                <li><a href="#">Gerak Lurus Beraturan</a></li>
+                <li><a href="#">Gerak Lurus Berubah <br/> Beraturan</a></li>
+                <li><a href="#">Gerak Melingkar</a></li>
+                <li><a href="#">Gerak Parabola</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Getaran, Gelombang &amp; Bunyi</h3>
+            <ul data-role="listview">
+                <li><a href="#">Periode &amp; Frekuensi Getaran</a></li>
+                <li><a href="#">Gelombang</a></li>
+                <li><a href="#">Percepatan Gelombang</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Impuls &amp; Momentum</h3>
+            <ul data-role="listview">
+                <li><a href="#">Impuls</a></li>
+                <li><a href="#">Momentum</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Induksi Elektromagnet</h3>
+            <ul data-role="listview">
+                <li><a href="#">Toroida</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Kapasitor</h3>
+            <ul data-role="listview">
+                <li><a href="#">kosong</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Kesetimbangan Benda Tegar</h3>
+            <ul data-role="listview">
+                <li><a href="#">Momen Gaya</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Massa Jenis</h3>
+            <ul data-role="listview">
+                <li><a href="#">Massa Jenis</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Medan Magnet</h3>
+            <ul data-role="listview">
+                <li><a href="#">Kosong</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Mekanika Fluida</h3>
+            <ul data-role="listview">
+                <li><a href="#">Tekanan</a></li>
+                <li><a href="#">Tekanan Hidrostatis</a></li>
+                <li><a href="#">Hukum Pascal</a></li>
+                <li><a href="#">Hukum Archimedes</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Pemuaian</h3>
+            <ul data-role="listview">
+                <li><a href="#">Muai Panjang</a></li>
+                <li><a href="#">Muai Luas</a></li>
+                <li><a href="#">Muai Volume</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Radioaktivitas</h3>
+            <ul data-role="listview">
+                <li><a href="#">kosong</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Rangkaian Arus Bolak-balik</h3>
+            <ul data-role="listview">
+                <li><a href="#">kosong</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Rangakaian Listrik</h3>
+            <ul data-role="listview">
+                <li><a href="#">Hukum Ohm</a></li>
+                <li><a href="#">Hukuk Kirchorff</a></li>
+                <li><a href="#">Hambatan Pengganti</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Relativitas</h3>
+            <ul data-role="listview">
+                <li><a href="#">Rumus Relativitas</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Suhu &amp; Kalor</h3>
+            <ul data-role="listview">
+                <li><a href="#">Suhu</a></li>
+                <li><a href="#">Kalor</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Tata Surya</h3>
+            <ul data-role="listview">
+                <li><a href="#">Tata Surya</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Teori Kinetik Gas</h3>
+            <ul data-role="listview">
+                <li><a href="#">Mol &amp; Massa Molekul</a></li>
+                <li><a href="#">Persamaan Keadaan Gas Ideal</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Termodinamika</h3>
+            <ul data-role="listview">
+                <li><a href="#">Hukum Pertama Termodinamika</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Usaha</h3>
+            <ul data-role="listview">
+                <li><a href="#">Usaha</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-inset="false">
+            <h3>Vektor</h3>
+            <ul data-role="listview">
+                <li><a href="#">Kosong</a></li>
+            </ul>
+        </div><!-- /collapsible -->
+
+
+
+        <br/>
+        <a href="../index.html" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-mini ui-icon-back ui-btn-icon-left" data-ajax="false">Back</a>
+    </div><!-- /content -->
+
+    <div data-role="panel" data-position-fixed="true" data-display="overlay" data-theme="a" id="nav-panel">
+
+		<ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+            <li data-icon="home"><a href="../index.html#utama" data-ajax="false">Menu Utama</a></li>
+            <li data-icon="mail"><a href="../index.html#request" data-ajax="false">Request Rumus <br/>&amp; Kalkulator</a></li>
+            <li data-icon="user"><a href="../index.html#about" data-ajax="false">About</a></li>
+            <li data-icon="power"><a href="#" onclick="exitFromApp()">Keluar</a></li>  
+		</ul>
+
+	</div><!-- /panel -->
+</div>
+
+
+<div data-role="page" id="request">
+    <div data-role="header" data-position="fixed" >
+        <h1>Request Rumus &amp; Kalkulator</h1>
+        <a href="#utama" data-iconpos="notext" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-back ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content jqm-content">
+        <p>Silakan request rumus dan kalkultor</p>
+        <a href="#utama" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-mini ui-icon-back ui-btn-icon-left">Back</a>
+    </div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>
